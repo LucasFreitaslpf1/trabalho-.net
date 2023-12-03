@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = trabalho_.net
 build_property.RootNamespace = trabalho_.net
-build_property.ProjectDir = C:\Dev\trabalho .net\
+build_property.ProjectDir = d:\RepositorioDotNet\trabalho-.net\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Dev\trabalho .net
+build_property.MSBuildProjectDirectory = d:\RepositorioDotNet\trabalho-.net
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Dev/trabalho .net/App.razor]
+[d:/RepositorioDotNet/trabalho-.net/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Pages/Counter.razor]
+[d:/RepositorioDotNet/trabalho-.net/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Pages/CrudUsuario.razor]
+[d:/RepositorioDotNet/trabalho-.net/Pages/CrudUsuario.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3J1ZFVzdWFyaW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Pages/FetchData.razor]
+[d:/RepositorioDotNet/trabalho-.net/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Pages/Index.razor]
+[d:/RepositorioDotNet/trabalho-.net/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Shared/SurveyPrompt.razor]
+[d:/RepositorioDotNet/trabalho-.net/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/_Imports.razor]
+[d:/RepositorioDotNet/trabalho-.net/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Shared/MainLayout.razor]
+[d:/RepositorioDotNet/trabalho-.net/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-84wj45fi2p
 
-[C:/Dev/trabalho .net/Shared/NavMenu.razor]
+[d:/RepositorioDotNet/trabalho-.net/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-g5tpmyugs6
 
-[C:/Dev/trabalho .net/Pages/Error.cshtml]
+[d:/RepositorioDotNet/trabalho-.net/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/trabalho .net/Pages/_Host.cshtml]
+[d:/RepositorioDotNet/trabalho-.net/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

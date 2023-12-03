@@ -3901,25 +3901,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas\\.nuget\\packages\\": {}
+    "C:\\Users\\Samsung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\trabalho .net\\trabalho .net.csproj",
+      "projectUniqueName": "D:\\RepositorioDotNet\\trabalho-.net\\trabalho .net.csproj",
       "projectName": "trabalho .net",
-      "projectPath": "C:\\Dev\\trabalho .net\\trabalho .net.csproj",
-      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\trabalho .net\\obj\\",
+      "projectPath": "D:\\RepositorioDotNet\\trabalho-.net\\trabalho .net.csproj",
+      "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
+      "outputPath": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.311\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3982,7 +3981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
