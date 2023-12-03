@@ -1,0 +1,159 @@
+@page "/Instrumentos"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<InstrumentoService>
+@inject NavigationManager NavigationManager
+
+
+
+<PageTitle>Instrumentos</PageTitle>
+
+
+<div style="text-align = center;">
+    <h3>Teste</h3>
+    <EditForm Model="@Instrumento">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label for="name">Nome </label>
+            <InputText id="name" class="form-control" @bind-Value=Instrumento.nome />
+            <ValidationMessage For="() => Instrumento.nome" />
+            <input type="submit" class="btn btn-success" value="Salvar" @onclick="salvar" />
+        </div>
+    </EditForm>
+    <table class="table">
+        <tr>
+            <th>Instrumento Id</th>
+            <th>Nome</th>
+        </tr>
+        @foreach (var inst in InstList)
+        {
+            <tr>
+                <td>
+                    @inst.id
+                </td>
+                <td>
+                    @inst.nome
+                </td>
+                <td>
+                    <button class="btn btn-danger" @onclick="() => ApagarInstrumento(inst)">Apagar</button>
+                </td>
+                <td>
+                    <button class="btn btn-info" @onclick="() => EditarInstrumento(inst)">Editar</button>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+@code {
+
+    Instrumento Instrumento = new Instrumento();
+    public IList<Instrumento> InstList;
+
+    private async Task salvar()
+    {
+        try
+        {
+            if (Instrumento.id == 0)
+            {
+                await Service.InsertInstrumento(Instrumento);
+            }
+            else
+            {
+                Service.UpdateInstrumento(Instrumento);
+            }
+            Instrumento = new();
+            updateList();
+        }
+        catch (Npgsql.PostgresException E)
+        {
+            Console.WriteLine(E.Message);
+        }
+
+    }    
+
+    private void updateList()
+    {
+        InstList = Service.getAllInstrumento();
+    }   
+    protected override void OnInitialized()
+    {
+
+        InstList = Service.getAllInstrumento();
+    }
+
+    private void ApagarInstrumento(Instrumento inst)
+    {
+        Service.DeleteInstrumento(inst);
+        updateList();
+    }
+
+    private void EditarInstrumento(Instrumento inst)
+    {
+        Instrumento = inst;
+    }
+
+
+
+
+
+
+
+
+    /*
+    private bool showNotification = false;
+    private string notificationMessage = "";
+    private Instrumento instrumentoEmEdicao = new Instrumento();
+    private bool exibindoFormularioEdicao = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await AtualizaInstrumentos();
+    }
+    private async Task AtualizaInstrumentos()
+    {
+        instrumentos = await service.RetornaInstrumentoAsync();
+    }
+
+    private void EditarInstrumento(Instrumento inst)
+    {
+        instrumentoEmEdicao = prod;
+        exibindoFormularioEdicao = true;
+    }
+
+    private async Task SalvarEdicao()
+    {
+        await service.UpdateProductAsync(instrumentoEmEdicao);
+
+
+        showNotification = true;
+        notificationMessage = $"Produto {instrumentoEmEdicao.Nome} editado com sucesso!";
+
+        await Task.Delay(2000);
+
+        await AtualizaInstrumentos();
+
+        showNotification = false;
+        exibindoFormularioEdicao = false;
+    }
+
+    private void CancelarEdicao()
+    {
+        exibindoFormularioEdicao = false;
+    }
+
+    private async Task ApagaInstrumento(Instrumento inst)
+    {
+        if (await JSRuntime.InvokeAsync<bool>("confirm", "Deletar produto " + inst.Nome + "?"))
+        {
+            await service.DeleteProductAsync(inst);
+            await AtualizaInstrumentos();
+
+            await Task.Delay(500);
+            // Notificação de sucesso usando window.alert()
+            await JSRuntime.InvokeVoidAsync("alert", $"Produto {inst.Nome} apagado com sucesso!");
+
+        }
+
+    } */
+}

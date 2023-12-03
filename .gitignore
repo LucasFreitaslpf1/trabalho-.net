@@ -1,5 +1,8 @@
-bin/Debug/net7.0/trabalho .net.pdb
-obj/Debug/net7.0/trabalho .net.dll
-obj/Debug/net7.0/trabalho .net.pdb
-obj/Debug/net7.0/ref/trabalho .net.dll
-obj/Debug/net7.0/refint/trabalho .net.dll
+bin/Debug/net7.0/trabalho .net.dll
+bin/Debug/net7.0/trabalho .net.exe
+obj/Debug/net7.0/apphost.exe
+obj/Debug/net7.0/project.razor.vscode.bin
+obj/Debug/net7.0/trabalho .net.assets.cache
+obj/Debug/net7.0/trabalho .net.csproj.AssemblyReference.cache
+obj/Debug/net7.0/trabalho .net.csproj.FileListAbsolute.txt
+obj/Debug/net7.0/trabalho .net.GeneratedMSBuildEditorConfig.editorconfig

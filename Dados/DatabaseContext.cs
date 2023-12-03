@@ -9,5 +9,7 @@ public class DatabaseContext : DbContext
     { }
 
     public DbSet<Usuario> Usuario { get; set; }
+    public DbSet<Instrumento> Instrumento { get; set; }
+    public DbSet<Musica> Musica { get; set; }
 
 }

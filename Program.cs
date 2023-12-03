@@ -10,6 +10,8 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnection")), ServiceLifetime.Scoped);
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<InstrumentoService>();
+builder.Services.AddScoped<MusicaService>();
 
 var app = builder.Build();
 
