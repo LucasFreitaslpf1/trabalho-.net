@@ -1,0 +1,106 @@
+﻿@page "/usuario"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<UsuarioService>
+
+<PageTitle>Index</PageTitle>
+
+<div style="text-align = center;">
+    <h3>Teste</h3>
+    <EditForm Model="@Usuario" OnValidSubmit="@salvar">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label for="name">Nome </label>
+            <InputText id="name" class="form-control" @bind-Value=Usuario.nome />
+            <ValidationMessage For="() => Usuario.nome" /><br />
+            <label for="email">Email </label>
+            <InputText id="email" class="form-control" data-mask="00.00.00" @bind-Value=Usuario.email />
+            <br>
+            <label for="senha">Senha</label>
+            <InputText type="password" id="senha" class="form-control" placeholder="senha" @bind-Value=Usuario.senha />
+            <br>
+            <input type="submit" class="btn btn-success" value="Salvar" />
+        </div>
+    </EditForm>
+    <table class="table">
+        <tr>
+            <th>Usuario Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        @foreach (var user in UserList)
+        {
+                <tr>
+                    <td>
+                    @user.id
+                    </td>
+                    <td>
+                    @user.nome
+                    </td>
+                    <td>
+                    @user.email
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" @onclick="() => ApagarUsuario(user)">Apagar</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-info" @onclick="() => EditarUsuario(user)">Editar</button>
+                    </td>
+                </tr>
+        }
+    </table>
+</div>
+
+@code
+{
+
+    bool esperando = false;
+    Usuario Usuario = new();
+    public IList<Usuario> UserList;
+
+    private async Task salvar()
+    {
+        esperando = true;
+        try
+        {
+            if (Usuario.id == 0)
+            {
+                await Service.InsertUsuario(Usuario);
+            }
+            else
+            {
+                await Service.UpdateUsuario(Usuario);
+            }
+            Usuario = new();
+            updateList();
+        }
+        catch (Exception E)
+        {
+            Console.WriteLine(E.Message);
+        }
+        finally
+        {
+            esperando = false;
+        }
+    }
+
+    private void updateList()
+    {
+        UserList = Service.getAllUsuario();
+    }
+    protected override void OnInitialized()
+    {
+        UserList = Service.getAllUsuario();
+    }
+
+    private void ApagarUsuario(Usuario user)
+    {
+        Service.DeleteUsuario(user);
+        updateList();
+    }
+
+    private void EditarUsuario(Usuario user)
+    {
+        Usuario = user;
+    }
+}
