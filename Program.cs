@@ -11,6 +11,8 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddDbContext<DatabaseContext>
 (options => options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnection")));
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<InstrumentoService>();
+builder.Services.AddScoped<MusicaService>();
 
 var app = builder.Build();
 

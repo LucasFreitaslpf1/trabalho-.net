@@ -1,0 +1,102 @@
+@page "/Musicas"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<MusicaService>
+@inject NavigationManager NavigationManager
+
+
+
+<PageTitle>Musica</PageTitle>
+
+
+<div style="text-align = center;">
+    <h3>Musica</h3>
+    <EditForm Model="@Musica">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label for="title">Titulo </label>
+            <InputText id="title" class="form-control" @bind-Value=Musica.titulo />
+            <ValidationMessage For="() => Musica.titulo" />
+            <label for="author">Autor </label>
+            <InputText id="author" class="form-control" @bind-Value=Musica.autor />
+            <ValidationMessage For="() => Musica.autor" />
+            <input type="submit" class="btn btn-success" value="Salvar" @onclick="salvar" />
+        </div>
+    </EditForm>
+    <table class="table">
+        <tr>
+            <th>Instrumento Id</th>
+            <th>Nome</th>
+            <th>Autor</th>
+        </tr>
+        @foreach (var mus in MusList)
+        {
+            <tr>
+                <td>
+                    @mus.id
+                </td>
+                <td>
+                    @mus.titulo
+                </td>
+                <td>
+                    @mus.autor
+                </td>
+                <td>
+                    <button class="btn btn-danger" @onclick="() => ApagarMusica(mus)">Apagar</button>
+                </td>
+                <td>
+                    <button class="btn btn-info" @onclick="() => EditarMusica(mus)">Editar</button>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+@code {
+
+    Musica Musica = new Musica();
+    public IList<Musica> MusList;
+
+    private async Task salvar()
+    {
+        try
+        {
+            if (Musica.id == 0)
+            {
+                await Service.InsertMusica(Musica);
+            }
+            else
+            {
+                Service.UpdateMusica(Musica);
+            }
+            Musica = new();
+            updateList();
+        }
+        catch (Npgsql.PostgresException E)
+        {
+            Console.WriteLine(E.Message);
+        }
+
+    }    
+
+    private void updateList()
+    {
+        MusList = Service.getAllMusica();
+    }   
+    protected override void OnInitialized()
+    {
+
+        MusList = Service.getAllMusica();
+    }
+
+    private void ApagarMusica(Musica mus)
+    {
+        Service.DeleteMusica(mus);
+        updateList();
+    }
+
+    private void EditarMusica(Musica mus)
+    {
+        Musica = mus;
+    }
+}
