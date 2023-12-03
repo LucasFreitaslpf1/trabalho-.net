@@ -103,3 +103,6 @@ C:\Dev\trabalho .net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Run
 C:\Dev\trabalho .net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Dev\trabalho .net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Dev\trabalho .net\obj\Debug\net7.0\trabalho .net.csproj.CopyComplete
+C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\trabalho .net.dll
+C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\refint\trabalho .net.dll
+C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\trabalho .net.pdb
