@@ -12,6 +12,12 @@ public class Usuario
     [Required(ErrorMessage = "Nome é obrigatório")]
     public string? nome { get; set; }
 
+    [Required]
+    public string? email { get; set; }
+
+    [Required]
+    public string? senha { get; set; }
+
     public override string ToString()
     {
         return "Id = " + id + " ;; nome = " + nome;
