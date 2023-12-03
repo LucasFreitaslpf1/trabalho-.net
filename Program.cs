@@ -8,8 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddDbContext<DatabaseContext>
-(options => options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnection")));
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("MyConnection")), ServiceLifetime.Scoped);
 builder.Services.AddScoped<UsuarioService>();
 
 var app = builder.Build();

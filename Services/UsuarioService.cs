@@ -25,24 +25,17 @@ public class UsuarioService
 
     public Task EditUsuario(int userId)
     {
-        Usuario usuario = new Usuario();
+        Usuario usuario = new();
         return DbContext.Usuario.FirstOrDefaultAsync(u => u.id == userId);
     }
 
-    public bool UpdateUsuario(Usuario usuario)
+    public Task UpdateUsuario(Usuario usuario)
     {
         var user = DbContext.Usuario.FirstOrDefault(u => u.id == usuario.id);
-        if (user != null)
-        {
-            user.id = usuario.id;
-            user.nome = usuario.nome;
-            DbContext.SaveChanges();
-        }
-        else
-        {
-            return false;
-        }
-        return true;
+
+        user.id = usuario.id;
+        user.nome = usuario.nome;
+        return DbContext.SaveChangesAsync();
     }
 
     public bool DeleteUsuario(Usuario usuario)
