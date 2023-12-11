@@ -22,7 +22,7 @@
             <input type="submit" class="btn btn-success" value="Salvar" />
         </div>
     </EditForm>
-    <table class="table">
+    <table>
         <tr>
             <th>Usuario Id</th>
             <th>Nome</th>
@@ -30,23 +30,24 @@
         </tr>
         @foreach (var user in UserList)
         {
-                <tr>
-                    <td>
+            <tr>
+                <td>
                     @user.id
-                    </td>
-                    <td>
+                </td>
+                <td>
                     @user.nome
-                    </td>
-                    <td>
+                </td>
+                <td>
                     @user.email
-                    </td>
-                    <td>
-                        <button class="btn btn-danger" @onclick="() => ApagarUsuario(user)">Apagar</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-info" @onclick="() => EditarUsuario(user)">Editar</button>
-                    </td>
-                </tr>
+                </td>
+                <td>
+                    <input type="submit" class="btn btn-success" value="Salvar" />
+                    <button class="btn btn-danger" @onclick="() => ApagarUsuario(user)">Apagar</button>
+                </td>
+                <td>
+                    <button class="btn btn-info" @onclick="() => EditarUsuario(user)">Editar</button>
+                </td>
+            </tr>
         }
     </table>
 </div>

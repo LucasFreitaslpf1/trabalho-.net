@@ -1,0 +1,80 @@
+﻿@page "/postagem"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<PostagemService>
+
+<h3>Postagem</h3>
+
+<EditForm Model="@postagem" OnValidSubmit="@salvar">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label for="texto">Texto </label>
+        <InputText id="texto" class="form-control" @bind-Value=postagem.texto />
+        <input type="submit" class="btn btn-success" value="Salvar" />
+    </div>
+</EditForm>
+
+<table class="table">
+    <tr>
+        <th>Texto</th>
+        <th>Quando</th>
+    </tr>
+    @foreach (var post in PostList)
+    {
+        <tr>
+            <td>
+                @post.id
+            </td>
+            <td>
+                @post.texto
+            </td>
+            <td>
+                @post.datahora
+            </td>
+            @* <td>
+        <button class="btn btn-danger" @onclick="() => ApagarUsuario(user)">Apagar</button>
+        </td>
+        <td>
+        <button class="btn btn-info" @onclick="() => EditarUsuario(user)">Editar</button>
+        </td> *@
+        </tr>
+    }
+</table>
+
+@code {
+    Postagem postagem = new();
+
+    IList<Postagem> PostList;
+
+    private async Task salvar()
+    {
+        postagem.datahora = DateTime.Now;
+        try
+        {
+            if (postagem.id == 0)
+            {
+                await Service.InsertPostagem(postagem);
+            }
+            else
+            {
+                await Service.UpdatePostagem(postagem);
+            }
+            postagem = new();
+            updateList();
+        }
+        catch (Exception E)
+        {
+            Console.WriteLine(E.Message);
+        }
+    }
+
+    private void updateList()
+    {
+        PostList = Service.getAllPostagem();
+    }
+
+    protected override void OnInitialized()
+    {
+        PostList = Service.getAllPostagem();
+    }
+}

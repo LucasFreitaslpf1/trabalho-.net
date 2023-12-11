@@ -14,4 +14,5 @@ public class DatabaseContext : DbContext
 
     public DbSet<Sample> Sample { get; set; }
 
+    public DbSet<Postagem> Postagem { get; set; }
 }

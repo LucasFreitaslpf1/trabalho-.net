@@ -15,6 +15,8 @@ builder.Services.AddScoped<MusicaService>();
 builder.Services.AddScoped<SampleService>();
 
 
+builder.Services.AddScoped<PostagemService>();
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var app = builder.Build();
 
