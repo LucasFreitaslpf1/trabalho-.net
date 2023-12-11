@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVzaWNhcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/RepositorioDotNet/trabalho-.net/Pages/PostagemCrud.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdGFnZW1DcnVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/RepositorioDotNet/trabalho-.net/Pages/Samples.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FtcGxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
