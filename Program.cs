@@ -12,6 +12,9 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(buil
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<InstrumentoService>();
 builder.Services.AddScoped<MusicaService>();
+builder.Services.AddScoped<SampleService>();
+
+
 
 var app = builder.Build();
 

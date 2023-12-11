@@ -106,3 +106,108 @@ C:\Dev\trabalho .net\obj\Debug\net7.0\trabalho .net.csproj.CopyComplete
 C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\trabalho .net.dll
 C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\refint\trabalho .net.dll
 C:\Dev\C#\PlataformaDeMusica\trabalho-.net\obj\Debug\net7.0\trabalho .net.pdb
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.csproj.AssemblyReference.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.GeneratedMSBuildEditorConfig.editorconfig
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.AssemblyInfoInputs.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.AssemblyInfo.cs
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.csproj.CoreCompileInputs.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.MvcApplicationPartsAssemblyInfo.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.RazorAssemblyInfo.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.RazorAssemblyInfo.cs
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.dll
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\refint\trabalho .net.dll
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.pdb
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\appsettings.Development.json
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\appsettings.json
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.staticwebassets.runtime.json
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.exe
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.deps.json
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.runtimeconfig.json
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\trabalho .net.pdb
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Azure.Core.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Azure.Identity.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Humanizer.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Npgsql.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.CodeDom.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Memory.Data.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\RepositorioDotNet\trabalho-.net\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets\msbuild.trabalho .net.Microsoft.AspNetCore.StaticWebAssets.props
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets\msbuild.build.trabalho .net.props
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.trabalho .net.props
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.trabalho .net.props
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets.pack.json
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets.build.json
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\staticwebassets.development.json
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\scopedcss\bundle\trabalho .net.styles.css
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\scopedcss\projectbundle\trabalho .net.bundle.scp.css
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.csproj.CopyComplete
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\trabalho .net.genruntimeconfig.cache
+D:\RepositorioDotNet\trabalho-.net\obj\Debug\net7.0\ref\trabalho .net.dll
