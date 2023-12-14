@@ -1,0 +1,46 @@
+﻿@page "/login"
+@using Autenticacao
+@using Services
+@inject IJSRuntime js
+@inject AuthenticationStateProvider authStateProvider
+@inject UsuarioService usuarioService
+@inject NavigationManager navManager
+
+<div>
+    <label>Nome</label>
+    <input @bind=model.nome class="form-control" />
+    <label>Senha</label>
+    <input @bind=model.senha type="password" class="form-control" />
+    <button @onclick="Authenticate" class="btn btn-primary">Login</button>
+</div>
+
+<h3>Login</h3>
+
+@code {
+
+    private class Model
+    {
+        public string nome { get; set; }
+        public string senha { get; set; }
+    }
+
+    private Model model = new();
+
+    private async Task Authenticate()
+    {
+        var user = usuarioService.getUsuarioByNome(model.nome);
+        if (user == null || user.senha != model.senha)
+        {
+            await js.InvokeVoidAsync("alert", "Nome ou senha inválido");
+            return;
+        }
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthentication(new UserSession
+            {
+                Name = user.nome,
+                Role = user.role,
+            });
+        navManager.NavigateTo("/", true);
+    }
+
+}

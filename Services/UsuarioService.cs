@@ -52,4 +52,10 @@ public class UsuarioService
         }
         return true;
     }
+
+    public Usuario getUsuarioByNome(string nome)
+    {
+        var user = DbContext.Usuario.FirstOrDefault(u => u.nome == nome);
+        return user;
+    }
 }

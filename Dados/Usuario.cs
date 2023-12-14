@@ -18,6 +18,8 @@ public class Usuario
     [Required]
     public string? senha { get; set; }
 
+    public string? role { get; set; }
+
     public override string ToString()
     {
         return "Id = " + id + " ;; nome = " + nome;

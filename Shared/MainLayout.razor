@@ -1,4 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@inject AuthenticationStateProvider authStateProvider
+@inject NavigationManager navManager
+@using Autenticacao
 
 <PageTitle>trabalho .net</PageTitle>
 
@@ -12,6 +15,11 @@
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">Notificações</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">Perfil</a>
+            <AuthorizeView>
+                <Authorized>
+                    <a @onclick="Logout" href="javascript:void(0)">Logout</a>
+                </Authorized>
+            </AuthorizeView>
         </div>
 
         <article class="content px-4">
@@ -19,3 +27,13 @@
         </article>
     </main>
 </div>
+
+@code
+{
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthentication(null);
+        navManager.NavigateTo("/", true);
+    }
+}
