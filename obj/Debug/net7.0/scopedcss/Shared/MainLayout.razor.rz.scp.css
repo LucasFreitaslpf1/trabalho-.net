@@ -22,6 +22,12 @@ main[b-84wj45fi2p] {
     align-items: center;
 }
 
+    .top-row input[type="search"][b-84wj45fi2p] {
+        width: 150px;
+        margin-right: 600px;
+        max-width: 100%;
+    }
+
     .top-row[b-84wj45fi2p]  a, .top-row .btn-link[b-84wj45fi2p] {
         white-space: nowrap;
         margin-left: 1.5rem;
@@ -34,6 +40,10 @@ main[b-84wj45fi2p] {
     
 
 @media (max-width: 640.98px) {
+    .top-row input[type="search"][b-84wj45fi2p] {
+        margin-right: 20px;
+    }
+
     .top-row:not(.auth)[b-84wj45fi2p] {
         display: none;
     }

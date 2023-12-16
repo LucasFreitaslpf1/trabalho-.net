@@ -1,7 +1,11 @@
 ﻿@inherits LayoutComponentBase
+<<<<<<< HEAD
+@inject NavigationManager NavigationManager
+=======
 @inject AuthenticationStateProvider authStateProvider
 @inject NavigationManager navManager
 @using Autenticacao
+>>>>>>> 9f9a092cc90f2b64023ab1e961570a04d4832412
 
 <PageTitle>trabalho .net</PageTitle>
 
@@ -11,6 +15,19 @@
     </div>
 
     <main>
+        <div class="top-row px-4 d-flex justify-content-between">
+            <div class="input-group rounded">
+                <span class="input-group-text">
+                    <input type="image" src="images/search.svg" alt="Search"  @onclick="SearchUsers"/>
+                </span>
+                <input type="search" class="form-control form-control rounded custom-search" placeholder="Pesquisar"
+                    aria-label="Search" aria-describedby="search-addon" @bind="searchTerm"/>
+            </div>
+            <div class="d-flex">
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">Notificações</a>
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">Perfil</a>
+            </div>
         <div class="top-row px-4">
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">Notificações</a>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
@@ -30,6 +47,13 @@
 
 @code
 {
+    private string searchTerm = "";
+    private void SearchUsers()
+    {
+        string url = $"/Pesquisar?SearchTerm={Uri.EscapeDataString(searchTerm)}";
+        NavigationManager.NavigateTo(url);
+    }
+
     private async Task Logout()
     {
         var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
