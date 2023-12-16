@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u1fGxF/SyTDgD63VS4XWXnSAGpVtr2K3vhEiL8I7sCU=",
+  "Hash": "YHt75H7yE09dxZRDA5ErPrd4kNW+8jmiB8nNdWE7aMs=",
   "Source": "trabalho .net",
   "BasePath": "_content/trabalho .net",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "trabalho .net\\wwwroot",
       "Source": "trabalho .net",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\trabalho .net.styles.css",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\trabalho .net.styles.css",
       "SourceId": "trabalho .net",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "trabalho .net.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\trabalho .net.styles.css"
+      "OriginalItemSpec": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\bundle\\trabalho .net.styles.css"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\trabalho .net.bundle.scp.css",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\trabalho .net.bundle.scp.css",
       "SourceId": "trabalho .net",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "trabalho .net.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Dev\\trabalho .net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\trabalho .net.bundle.scp.css"
+      "OriginalItemSpec": "D:\\RepositorioDotNet\\trabalho-.net\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\trabalho .net.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\css\\site.css",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\css\\site.css",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Dev\\trabalho .net\\wwwroot\\favicon.png",
+      "Identity": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\favicon.png",
       "SourceId": "trabalho .net",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Dev\\trabalho .net\\wwwroot\\",
+      "ContentRoot": "D:\\RepositorioDotNet\\trabalho-.net\\wwwroot\\",
       "BasePath": "_content/trabalho .net",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

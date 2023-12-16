@@ -59,4 +59,9 @@ public class UsuarioService
             .Where(u => EF.Functions.ILike(u.nome, $"%{termoPesquisa}%"))
             .ToListAsync();
     }
+    public Usuario getUsuarioByNome(string nome)
+    {
+        var user = DbContext.Usuario.FirstOrDefault(u => u.nome == nome);
+        return user;
+    }
 }

@@ -2,6 +2,9 @@ using trabalho_.net.Data;
 using Microsoft.EntityFrameworkCore;
 using Dados;
 using Services;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+using Microsoft.AspNetCore.Components.Authorization;
+using Autenticacao;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +15,16 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseNpgsql(buil
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<InstrumentoService>();
 builder.Services.AddScoped<MusicaService>();
+builder.Services.AddScoped<SampleService>();
+
+
+builder.Services.AddScoped<PostagemService>();
+
+builder.Services.AddAuthenticationCore();
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var app = builder.Build();
 

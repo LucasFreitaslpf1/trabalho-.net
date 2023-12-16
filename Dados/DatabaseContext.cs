@@ -12,4 +12,7 @@ public class DatabaseContext : DbContext
     public DbSet<Instrumento> Instrumento { get; set; }
     public DbSet<Musica> Musica { get; set; }
 
+    public DbSet<Sample> Sample { get; set; }
+
+    public DbSet<Postagem> Postagem { get; set; }
 }

@@ -23,12 +23,22 @@ namespace trabalho.net.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     nome = table.Column<string>(type: "text", nullable: false),
                     email = table.Column<string>(type: "text", nullable: false),
-                    senha = table.Column<string>(type: "text", nullable: false)
+                    senha = table.Column<string>(type: "text", nullable: false),
+                    role = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_usuario", x => x.id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "usuario",
+                columns: new[] { "nome", "email", "senha", "role" },
+                values: new object[,]
+                {
+                    {"admin","admin@admin.com","admin","admin"}
+                }
+            );
         }
 
         /// <inheritdoc />

@@ -1,0 +1,116 @@
+﻿@page "/Samples"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<SampleService>
+@inject NavigationManager NavigationManager
+
+
+
+<PageTitle>Sample</PageTitle>
+
+
+<div style="text-align = center;">
+    <h3>Sample</h3>
+    
+    
+    <EditForm Model="@Sample">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label for="dataPostagem">Data da Postagem </label>
+<!--            <Input type ="date" id="dataPostagem" class="form-control" @bind-Value=Sample.dataPostagem /> --> 
+            <InputText id="dataPostagem" class="form-control" @bind-Value=Sample.dataPostagem />
+            <ValidationMessage For="() => Sample.dataPostagem" />
+
+            <input type="submit" class="btn btn-success" value="Salvar" @onclick="salvar" />
+        </div>
+    </EditForm>
+
+
+
+    <table class="table">
+        <tr>
+            <th>Sample Id</th>
+            <th>Data de Postagem</th>
+        </tr>
+        @foreach (var samp in SampleList)
+        {
+            <tr>
+                <td>
+                    @samp.id
+                </td>
+                <td>
+                    @samp.dataPostagem
+                </td>
+
+                <td>
+                    <button class="btn btn-danger" @onclick="() => ApagarSample(samp)">Apagar</button>
+                </td>
+                <td>
+                    <button class="btn btn-info" @onclick="() => EditarSample(samp)">Editar</button>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
+@code {
+
+
+    Sample Sample = new Sample();
+    public IList<Sample> SampleList;
+
+    private async Task salvar()
+    {
+        try
+        {
+            if (Sample.id == 0)
+            {
+                await Service.InsertSample(Sample);
+            }
+            else
+            {
+                Service.UpdateSample(Sample);
+            }
+            
+            Sample = new();
+            updateList();
+        }
+        catch (Npgsql.PostgresException E)
+        {
+            Console.WriteLine(E.Message);
+        }
+
+    }
+
+
+    private void updateList()
+    {
+        SampleList = Service.getAllSample();
+    }
+    
+    
+    protected override void OnInitialized()
+    {
+
+        SampleList = Service.getAllSample();
+    }
+
+    private void ApagarSample(Sample samp)
+    {
+        Service.DeleteSample(samp);
+        updateList();
+    }
+
+    private void EditarSample(Sample s)
+    {
+        Sample = s;
+    }
+
+
+
+
+
+
+}

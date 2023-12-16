@@ -1,5 +1,11 @@
 ﻿@inherits LayoutComponentBase
+<<<<<<< HEAD
 @inject NavigationManager NavigationManager
+=======
+@inject AuthenticationStateProvider authStateProvider
+@inject NavigationManager navManager
+@using Autenticacao
+>>>>>>> 9f9a092cc90f2b64023ab1e961570a04d4832412
 
 <PageTitle>trabalho .net</PageTitle>
 
@@ -22,6 +28,15 @@
                 <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
                 <a href="https://docs.microsoft.com/aspnet/" target="_blank">Perfil</a>
             </div>
+        <div class="top-row px-4">
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">Notificações</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">Perfil</a>
+            <AuthorizeView>
+                <Authorized>
+                    <a @onclick="Logout" href="javascript:void(0)">Logout</a>
+                </Authorized>
+            </AuthorizeView>
         </div>
 
         <article class="content px-4">
@@ -37,5 +52,12 @@
     {
         string url = $"/Pesquisar?SearchTerm={Uri.EscapeDataString(searchTerm)}";
         NavigationManager.NavigateTo(url);
+    }
+
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthentication(null);
+        navManager.NavigateTo("/", true);
     }
 }
