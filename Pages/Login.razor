@@ -6,6 +6,7 @@
 @inject UsuarioService usuarioService
 @inject NavigationManager navManager
 
+<h3>Login</h3>
 <div>
     <label>Nome</label>
     <input @bind=model.nome class="form-control" />
@@ -14,7 +15,6 @@
     <button @onclick="Authenticate" class="btn btn-primary">Login</button>
 </div>
 
-<h3>Login</h3>
 
 @code {
 

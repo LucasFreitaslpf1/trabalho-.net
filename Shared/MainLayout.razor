@@ -13,14 +13,20 @@
 
     <main>
         <div class="top-row px-4 d-flex justify-content-between">
-            <div class="input-group rounded">
-                <span class="input-group-text">
-                    <input type="image" src="images/search.svg" alt="Search" @onclick="SearchUsers" />
-                </span>
-                <input type="search" class="form-control form-control rounded custom-search" placeholder="Pesquisar"
-                    aria-label="Search" aria-describedby="search-addon" @bind="searchTerm" />
-            </div>
-            <div class="top-row px-4">
+            <AuthorizeView>
+                <Authorized>
+                    <div class="input-group rounded">
+                        <span class="input-group-text">
+                            <input type="image" src="images/search.svg" alt="Search" @onclick="SearchUsers" />
+                        </span>
+                        <input type="search" class="form-control form-control rounded custom-search"
+                            placeholder="Pesquisar" aria-label="Search" aria-describedby="search-addon"
+                            @bind="searchTerm" />
+                    </div>
+                </Authorized>
+            </AuthorizeView>
+
+            <div class="top-row d-flex px-4">
                 <a href="https://docs.microsoft.com/aspnet/" target="_blank">Notificações</a>
                 <a href="https://docs.microsoft.com/aspnet/" target="_blank">Grupos</a>
                 <a href="https://docs.microsoft.com/aspnet/" target="_blank">Perfil</a>

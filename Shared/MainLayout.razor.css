@@ -37,7 +37,7 @@ main {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
+
 
 @media (max-width: 640.98px) {
     .top-row input[type="search"] {
