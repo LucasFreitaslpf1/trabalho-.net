@@ -1,10 +1,12 @@
 ﻿@page "/postagem"
 @using Dados;
 @using Services;
+@using Autenticacao;
 @inherits OwningComponentBase<PostagemService>
+@inject UsuarioService usuarioService;
+@inject AuthenticationStateProvider authStateProvider
 
 <h3>Postagem</h3>
-
 <EditForm Model="@postagem" OnValidSubmit="@salvar">
     <DataAnnotationsValidator />
     <div class="form-group">
@@ -16,8 +18,10 @@
 
 <table class="table">
     <tr>
+        <th>Id</th>
         <th>Texto</th>
         <th>Quando</th>
+        <th>Autor</th>
     </tr>
     @foreach (var post in PostList)
     {
@@ -30,6 +34,9 @@
             </td>
             <td>
                 @post.datahora
+            </td>
+            <td>
+                @usuarioService.getUsuarioById(@post.usuario_id).nome
             </td>
             @* <td>
         <button class="btn btn-danger" @onclick="() => ApagarUsuario(user)">Apagar</button>
@@ -46,9 +53,16 @@
 
     IList<Postagem> PostList;
 
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationState { get; set; }
+
+    private string userName;
+
     private async Task salvar()
     {
         postagem.datahora = DateTime.Now;
+        postagem.usuario_id = getUserId();
+
         try
         {
             if (postagem.id == 0)
@@ -73,8 +87,17 @@
         PostList = Service.getAllPostagem();
     }
 
-    protected override void OnInitialized()
+    protected override async void OnInitialized()
     {
         PostList = Service.getAllPostagem();
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        userName = user.Identity.Name;
+    }
+
+    private int getUserId()
+    {
+        var user = usuarioService.getUsuarioByNome(userName);
+        return user.id;
     }
 }

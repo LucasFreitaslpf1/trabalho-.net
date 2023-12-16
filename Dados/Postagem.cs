@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Dados;
+using Services;
 
 namespace Dados;
 
@@ -18,5 +20,7 @@ public class Postagem
 
     [Required]
     public string texto { get; set; }
+
+    public int usuario_id {get;set;}
 
 }

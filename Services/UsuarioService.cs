@@ -58,4 +58,10 @@ public class UsuarioService
         var user = DbContext.Usuario.FirstOrDefault(u => u.nome == nome);
         return user;
     }
+
+    public Usuario getUsuarioById(int id)
+    {
+        var user = DbContext.Usuario.FirstOrDefault(u => u.id == id);
+        return user;
+    }
 }
