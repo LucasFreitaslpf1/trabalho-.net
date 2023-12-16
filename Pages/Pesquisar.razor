@@ -1,0 +1,68 @@
+@page "/Pesquisar"
+@using Dados;
+@using Services;
+@inherits OwningComponentBase<UsuarioService>
+
+<h1>Pesquisa de Usuário</h1>
+<!--<input type="text" @bind="TermoPesquisa" placeholder="Digite o nome para pesquisar" />
+<button @onclick="PesquisarUsuariosAsync">Pesquisar</button> -->
+
+@if (!string.IsNullOrEmpty(SearchTerm))
+{
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+        </tr>
+
+        @if (UserList != null)
+        {
+            @foreach (var user in UserList)
+            {
+                <tr>
+                    <td>
+                        @user.nome
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+}
+@if (string.IsNullOrEmpty(SearchTerm))
+{
+    <p style="color: red;">Por favor, digite o nome de um usuário para pesquisa.</p>
+}
+
+
+
+@code
+{
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string SearchTerm { get; set; }
+    public IList<Usuario> UserList;
+
+    /*protected override async Task OnInitializedAsync()
+    {
+    if (!string.IsNullOrEmpty(SearchTerm))
+    {
+    await PesquisarUsuariosAsync(SearchTerm);
+    }
+    }*/
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrEmpty(SearchTerm))
+        {
+            if (UserList == null || !SearchTerm.Equals(UserList))
+            {
+                await PesquisarUsuariosAsync(SearchTerm);
+            }
+        }
+
+    }
+    private async Task PesquisarUsuariosAsync(string searchTerm)
+    {
+        // Chama a função de pesquisa no serviço e atualize a lista de usuários
+        UserList = await Service.PesquisarUsuariosAsync(searchTerm);
+        StateHasChanged();
+    }
+}
