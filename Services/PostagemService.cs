@@ -14,7 +14,7 @@ public class PostagemService
 
     public List<Postagem> getAllPostagem()
     {
-        return DbContext.Postagem.ToList();
+        return DbContext.Postagem.OrderByDescending(x => x.datahora).ToList();
     }
 
     public Task InsertPostagem(Postagem user)
